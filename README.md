@@ -1,2 +1,2 @@
 # parcticeProject2
- CRUD repo using file system in node js
+ CRUD app using file system in node js
