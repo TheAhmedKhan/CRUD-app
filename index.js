@@ -27,14 +27,17 @@ app.get('/edit/:editfile',(req,res)=>{
     fs.readFile(`./files/${req.params.editfile}`,"utf-8",(err,filedata)=>{
         res.render('edit',{editfile:req.params.editfile,filedata:filedata});
         app.post('/update',(req,res)=>{
+            
 
             fs.writeFile(`./files/${req.body.titles.slice('.txt')}`,req.body.details,(err)=>{
                 res.redirect('/');
+                
             });
             
         });
+       
 
-    })
+    });
 
     
 });
