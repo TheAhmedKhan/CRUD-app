@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+
+    <div class="main w-full min-h-screen bg-zinc-900 p-10 text-white">
+        <a href="/" class="text-blue-500 inline-block mb-">Home</a>
+        <div class="form p-10 text-white">
+            <h1 class="text-3xl tracking-tighter"></h1>
+            <form action="/update" method="post">
+                <input class="block px-5 w-full rounded-md py-2 outline-none bg-zinc-800" type="text" value=<%= editfile %> name="titles">
+                <textarea class="block mt-2 px-5 w-full rounded-md outline-none bg-zinc-800" type="text" placeholder="Description" name="details"><%=filedata%></textarea>
+                <input type="submit" class="mt-2 bg-blue-600 px-5 py-2 rounded-md" value="update task">
+
+            </form>
+        </div>
+        
+</body>
+</html>
